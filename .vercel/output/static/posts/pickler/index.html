@@ -1,0 +1,408 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>PreProd : AutoML made simple</title><meta name="description" content="Personal website of Pranav Chunchur"><meta name="author" content="PC"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/_astro/imprint.Bs2caHeX.css">
+<style>.content pre{background-color:#cdc8ff0d;border-radius:.5rem;font-size:.9rem}.content code{overflow-x:auto}.content [data-rehype-pretty-code-figure] code{padding:0!important}.content pre>code span[data-line]{border-left:.5rem solid transparent;padding:0 .5rem}.content pre>code span:first-of-type{border-top-left-radius:.5rem;border-top-right-radius:.5rem;padding-top:.5rem}.content pre>code span:last-of-type{border-bottom-left-radius:.5rem;border-bottom-right-radius:.5rem;padding-bottom:.5rem}.content pre>code .highlighted{border-left:.5rem solid rgba(209,213,219,.6)!important;background-color:#e5e7eb0d}.content pre>code[data-line-numbers]{counter-reset:line}.content pre>code[data-line-numbers]>span[data-line]:before{counter-increment:line;content:counter(line);display:inline-block;margin-right:2rem;width:1rem;text-align:left;color:#7ca2dfad}.content pre>code>span[data-line]:before{content:"";display:inline-block;width:1rem;text-align:right}.content pre>code[data-line-numbers-max-digits="2"]>span[data-line]:before{width:2rem}.content code[data-line-numbers-max-digits="3"]>span[data-line]:before{width:3rem}
+</style><script type="module">localStorage.getItem("dark-mode")==="true"||!("dark-mode"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?(localStorage.setItem("dark-mode","true"),document.querySelector("html")?.classList.add("dark")):(localStorage.setItem("dark-mode","false"),document.querySelector("html")?.classList.remove("dark"));const t=document.querySelectorAll(".light-switch");t.length>0&&t.forEach((e,a)=>{localStorage.getItem("dark-mode")==="true"&&(e.checked=!0),e.addEventListener("click",()=>{const{checked:o}=e;t.forEach((c,d)=>{d!==a&&(c.checked=o)}),e.checked?(document.documentElement.classList.add("dark"),localStorage.setItem("dark-mode","true")):(document.documentElement.classList.remove("dark"),localStorage.setItem("dark-mode","false"))})});
+</script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		var script = document.createElement('script');
+		script.defer = true;
+		script.src = '/_vercel/insights/script.js';
+		var head = document.querySelector('head');
+		head.appendChild(script);
+	</script></head> <body class="flex min-h-screen flex-col bg-gray-100 font-mono text-gray-950 dark:bg-gray-950 dark:text-white"> <div class="mx-auto w-full max-w-screen-lg px-4 py-6">  <div class="flex flex-row justify-between pb-4 border-b border-dashed border-gray-500"> <div class="flex flex-row items-center font-bold w-max"> <a href="/"><img src="/logo.png" width="100px" height="100px" class="w-12 h-12 md:w-16 md:h-16"></a> <div class="flex flex-row gap-1 items-center justify-center"> <p class="pr-2 text-lg md:text-xl lg:text-2xl text-gray-500">&lt;</p> <p class="text-lg md:text-xl lg:text-2xl">pranav chunchur</p> <p class="text-[rgb(216,50,42)] animate-pulse">.</p> <p class=" text-lg md:text-xl lg:text-2xl text-gray-500">/&gt;</p> </div> </div> <div class="items-center hidden md:flex"> <nav> <ul class="flex flex-row sm:flex"> <li><a href="/tags" class="mr-4 hover:text-[rgb(216,50,42)]">TAGS</a></li> <li><a href="/posts" class="mr-4 hover:text-[rgb(216,50,42)]">BLOG</a></li> </ul> </nav> <div class="ml-3 flex flex-col justify-center"> <input type="checkbox" id="light-switch" class="light-switch sr-only"> <label class="tada relative cursor-pointer p-2" for="light-switch"> <svg class="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg"> <path class="fill-black-800" d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z"></path> <path class="fill-black-900" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"></path> </svg> <svg class="hidden dark:block" width="16" height="16" xmlns="http://www.w3.org/2000/svg"> <path class="fill-slate-400" d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z"></path> <path class="fill-slate-500" d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z"></path> </svg> <span class="sr-only">Switch to light / dark version</span> </label> </div> </div> </div>  </div>  <div class="flex-1">  <div class="mx-auto w-full max-w-screen-md"> <div class="mx-auto w-full max-w-screen-lg px-4 py-6">  <div class="flex flex-col items-center"> <p class="px-14 pb-4 pt-6 text-center text-4xl font-bold">PreProd : AutoML made simple</p> <div class="pb-4"> <div class="flex flex-wrap"> <a href="/tags/iOS"><span class="mb-2 mr-2 rounded-xl bg-stone-600 px-3 py-1 text-xs font-bold uppercase text-white hover:bg-stone-500">
+#iOS </span></a><a href="/tags/MVVM"><span class="mb-2 mr-2 rounded-xl bg-stone-600 px-3 py-1 text-xs font-bold uppercase text-white hover:bg-stone-500">
+#MVVM </span></a><a href="/tags/finance"><span class="mb-2 mr-2 rounded-xl bg-stone-600 px-3 py-1 text-xs font-bold uppercase text-white hover:bg-stone-500">
+#finance </span></a> </div> </div> <div class="text-sm"> <span>Sat, December 23, 2023</span> - <span>10 min read</span> </div>  </div>  </div> <div class="mx-auto w-full max-w-screen-lg px-4 py-6">  <div class="content prose mt-8 max-w-none text-base leading-8 text-black dark:prose-invert prose-code:rounded-lg prose-code:bg-stone-800 prose-code:p-1 prose-code:text-orange-600 prose-img:rounded-lg prose-img:shadow-xl dark:text-white prose-img:dark:shadow-stone-800"> <h3 id="automl-hackathon">AutoML Hackathon</h3>
+<blockquote>
+<p>Team PipeDreamers</p>
+</blockquote>
+<blockquote>
+<p>[!NOTE] Objective</p>
+</blockquote>
+<ul>
+<li>Receive file inputs from users.</li>
+<li>Perform data cleaning and preprocessing.</li>
+<li>Format data for various machine learning classification algorithms.</li>
+<li>Pass necessary parameters to train data</li>
+<li>Ensuring scalability, reliability, and efficiency in data handling.</li>
+</ul>
+<h3 id="project-plan">Project Plan</h3>
+<h4 id="1-architecture">1. Architecture</h4>
+<p>The system is designed using a micro-services architecture to ensure modularity, scalability, and ease of maintenance. The architecture is composed of the following components:</p>
+<p>![[Screenshot 2024-08-02 at 9.37.19 AM.png]]</p>
+<ul>
+<li>
+<h5 id="frontend-nextjs">Frontend (Next.js)</h5>
+</li>
+</ul>
+<ul>
+<li><strong>Description</strong>: The frontend is developed using Next.js, a React-based framework. It provides a user-friendly interface for users to upload files and view the processing status.</li>
+<li><strong>Features</strong>:
+<ul>
+<li>File upload functionality</li>
+<li>Status dashboard for tracking the data processing pipeline</li>
+<li>User authentication and session management</li>
+<li>Parameters to train model</li>
+</ul>
+</li>
+</ul>
+<h5 id="backend-services">Backend Services</h5>
+<h5 id="file-upload-and-management">File Upload and Management</h5>
+<ul>
+<li><strong>Description</strong>: This microservice handles the ingestion of files uploaded by users. It stores the files temporarily and initiates the data processing pipeline.</li>
+<li><strong>Technologies</strong>: JavaScript</li>
+<li><strong>Responsibilities</strong>:
+<ul>
+<li>Receive and validate file uploads</li>
+<li>Store files in a temporary location on Google Cloud Storage</li>
+<li>Adds files metadata in Mongo DB</li>
+<li>Adds new event to RabbitMQ queue</li>
+</ul>
+</li>
+</ul>
+<h5 id="data-cleaning-and-preprocessing-python">Data Cleaning and Preprocessing (Python)</h5>
+<ul>
+<li><strong>Description</strong>: This service is responsible for cleaning and preprocessing the uploaded data.</li>
+<li><strong>Technologies</strong>: Python, Pandas, NumPy, Scikit-Learn</li>
+<li><strong>Responsibilities</strong>:
+<ul>
+<li>Detect and handle missing values</li>
+<li>Normalise and standardise data</li>
+<li>Convert categorical data into numerical formats (one-hot encoding, label encoding)</li>
+<li>Handle data anomalies and inconsistencies</li>
+</ul>
+</li>
+</ul>
+<h5 id="machine-learning-preprocessing-python">Machine Learning Preprocessing (Python)</h5>
+<ul>
+<li><strong>Description</strong>: This service formats the cleaned data into trainable formats for various machine learning algorithms.</li>
+<li><strong>Technologies</strong>: Python, scikit-learn</li>
+<li><strong>Responsibilities</strong>:
+<ul>
+<li>Split data into training and testing sets</li>
+<li>Scale and transform data as required by specific algorithms</li>
+<li>Train various ML models on the uploaded dataset</li>
+<li>Save the trained models in pickled file formats</li>
+</ul>
+</li>
+</ul>
+<h5 id="data-storage-mongodb-google-cloud-storage">Data Storage (MongoDB, Google Cloud Storage)</h5>
+<ul>
+<li><strong>Description</strong>: MongoDB is used as the primary database for storing metadata about the files and their processing status.</li>
+<li><strong>Responsibilities</strong>:
+<ul>
+<li>Store user information and authentication data</li>
+<li>Track file upload and processing status</li>
+<li>MongoDB stores files metadata.</li>
+<li>GCS stores uploaded datasets</li>
+</ul>
+</li>
+</ul>
+<h5 id="message-queue-rabbitmq">Message Queue (RabbitMQ)</h5>
+<ul>
+<li><strong>Description</strong>: RabbitMQ is utilised for asynchronous communication between microservices.</li>
+<li><strong>Responsibilities</strong>:
+<ul>
+<li>Queue messages for file processing tasks</li>
+<li>Ensure reliable delivery of tasks to the appropriate microservices</li>
+<li>Enable scalability by distributing workloads among multiple instances of processing services</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-skill-matrix">2. Skill Matrix</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>skills</em></th><th>Manomay</th><th>Sudhith</th><th>Pranav</th><th>Jaiyank</th></tr></thead><tbody><tr><td>Front end</td><td></td><td></td><td>✔️</td><td></td></tr><tr><td>Backend</td><td>✔️</td><td></td><td></td><td></td></tr><tr><td>AI/ML</td><td></td><td>✔️</td><td></td><td>✔️</td></tr><tr><td>Documentation</td><td></td><td></td><td>✔️</td><td></td></tr></tbody></table>
+<h4 id="3-timeline">3. Timeline</h4>
+<p>To tackle the project efficiently, the team divided the work into two parallel streams: Web Development and Backend Development using Python.</p>
+<p><strong>Day 1</strong></p>
+<blockquote>
+<p><strong>TL;DR</strong>
+The first day focused on groundwork for both the frontend and backend systems. The web development efforts concentrated on building a functional user interface, while backend work established essential data processing and machine learning capabilities.</p>
+</blockquote>
+<h5 id="web-development-day-1">Web Development: Day 1</h5>
+<p><strong>Tasks and Progress</strong>:</p>
+<ol>
+<li>
+<p><strong>Authentication/Login Page</strong>:</p>
+<ul>
+<li><strong>Goal</strong>: Implement a secure login system to manage user access.</li>
+<li><strong>Implementation</strong>:
+<ul>
+<li>Built using Next.js and integrated with a user authentication service.</li>
+<li>Implemented secure token-based authentication to ensure user data privacy.</li>
+<li>Developed a responsive design to ensure usability across various devices.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Dashboard for File Upload</strong>:</p>
+<ul>
+<li><strong>Goal</strong>: Provide a user-friendly interface for uploading data files.</li>
+<li><strong>Implementation</strong>:
+<ul>
+<li>Designed and developed a dashboard interface with Next.js.</li>
+<li>Added functionality to allow users to upload files easily.</li>
+<li>Provided a section for users to view the status of their uploaded files and processing.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Backend Connection</strong>:</p>
+<ul>
+<li><strong>Goal</strong>: Connect the frontend to the backend services for data storage and processing.</li>
+<li><strong>Implementation</strong>:
+<ul>
+<li>Established an API to communicate between the frontend and the backend.</li>
+<li>Implemented a system to store metadata (such as file names) in MongoDB.</li>
+<li>Configured Google Cloud Storage to securely store the uploaded files.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="python-backend-development-day-1">Python Backend Development: Day 1</h5>
+<p><strong>Tasks and Progress</strong>:</p>
+<ol>
+<li>
+<p><strong>Preprocessor Functionality</strong>:</p>
+<ul>
+<li><strong>Goal</strong>: Develop a module for data cleaning and preparation.</li>
+<li><strong>Implementation</strong>:
+<ul>
+<li>Created a Python script using Pandas and NumPy to handle missing values, normalise data, and perform other preprocessing tasks.</li>
+<li>Established a modular design to easily extend the preprocessing capabilities as needed.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Machine Learning Algorithms</strong>:</p>
+<ul>
+<li><strong>Goal</strong>: Implement initial models for training.</li>
+<li><strong>Implementation</strong>:
+<ul>
+<li>Developed functions for training Support Vector Machine (SVM) and Random Forest classifiers.</li>
+<li>Utilised scikit-learn for model training and evaluation.</li>
+<li>Ensured that the models could take the preprocessed data and output trained models ready for deployment.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>Day2</strong></p>
+<blockquote>
+<p><strong>TL;DR</strong>
+On Day 2, our team made significant progress in various aspects of the project, focusing on UI development, frontend implementation, model training, data preprocessing, integrating a new machine learning model, and setting up communication between micro-services. Additionally, we containerised the application for improved deployment and scalability.</p>
+</blockquote>
+<p><strong>1. UI Development</strong></p>
+<ul>
+<li><strong>Objective:</strong> Enhance the user interface for better user experience and functionality.</li>
+<li><strong>Tasks Completed:</strong>
+<ul>
+<li>Designed and implemented key UI components based on the project specifications.</li>
+<li>Improved the responsiveness and aesthetics of the application, ensuring it works seamlessly across different devices and screen sizes.</li>
+<li>Added interactive elements and navigation features to improve user interaction.</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Frontend Implementation</strong></p>
+<ul>
+<li><strong>Objective:</strong> Develop and integrate the frontend elements with the backend services.</li>
+<li><strong>Tasks Completed:</strong>
+<ul>
+<li>Implemented frontend logic and integrated it with the backend API.</li>
+<li>Ensured data flows correctly between the frontend and backend, providing a smooth user experience.</li>
+<li>Conducted testing to validate the functionality and performance of the frontend components.</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. Model Training and Hyper-parameter Tuning</strong></p>
+<ul>
+<li><strong>Objective:</strong> Train machine learning models and optimise their performance through hyper-parameter tuning.</li>
+<li><strong>Tasks Completed:</strong>
+<ul>
+<li>Trained several machine learning models using the available dataset.</li>
+<li>Conducted hyper-parameter tuning to enhance model accuracy and efficiency.</li>
+<li>Recorded the best-performing models and their respective hyper-parameters for further evaluation.</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. Data Preprocessing</strong></p>
+<ul>
+<li><strong>Objective:</strong> Prepare the data for model training by cleaning and handling missing values.</li>
+<li><strong>Tasks Completed:</strong>
+<ul>
+<li><strong>Check for Null Values:</strong> Identified and addressed any missing data in the dataset.</li>
+<li><strong>Data Cleaning:</strong> Cleaned the dataset by removing irrelevant information, handling missing values, and normalising data where necessary.</li>
+<li><strong>Feature Engineering:</strong> Created new features and selected the most relevant ones to improve model performance.</li>
+</ul>
+</li>
+</ul>
+<p><strong>5. Addition of Gaussian Naive Bayes</strong></p>
+<ul>
+<li><strong>Objective:</strong> Introduce Gaussian Naive Bayes as a classification model to the existing set of models.</li>
+<li><strong>Tasks Completed:</strong>
+<ul>
+<li>Implemented the Gaussian Naive Bayes algorithm.</li>
+<li>Trained the model on the preprocessed dataset.</li>
+<li>Evaluated its performance against other models to determine its efficacy.</li>
+</ul>
+</li>
+</ul>
+<p><strong>6. Setup RabbitMQ for Micro-services Communication</strong></p>
+<ul>
+<li><strong>Objective:</strong> Establish a reliable communication channel between micro-services using RabbitMQ.</li>
+<li><strong>Tasks Completed:</strong>
+<ul>
+<li>Installed and configured RabbitMQ as a message broker.</li>
+<li>Implemented message queues for efficient communication between different micro-services.</li>
+<li>Tested the message flow to ensure reliable and timely delivery of messages across services.</li>
+</ul>
+</li>
+</ul>
+<p><strong>7. Dockerisation of the Application</strong></p>
+<ul>
+<li><strong>Objective:</strong> Containerise the application for consistent deployment and scalability.</li>
+<li><strong>Tasks Completed:</strong>
+<ul>
+<li>Created Docker files for the different components of the application.</li>
+<li>Built Docker images for each component and verified their functionality.</li>
+<li>Deployed the Dockerized application, ensuring it runs smoothly in the containerised environment.</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-usermanual">4. UserManual</h4>
+<h3 id="1-introduction"><strong>1. Introduction</strong></h3>
+<ul>
+<li>
+<p>Welcome to the <strong>Pickler</strong> User Manual. This guide provides all the information you need to effectively use <em>Pickler</em>. Whether you’re a beginner or an experienced user, this manual will help you navigate the software’s features and functionalities and get the most of <em>Pickler</em>, we’ve got all the tips and tricks you need.</p>
+</li>
+<li>
+<p><strong>Pickler</strong> is a solution to upload your dataset and get pickle file trained using your desired classification model.</p>
+</li>
+</ul>
+<p><strong>2. Getting Started</strong></p>
+<p><strong>System Requirements</strong>
+<strong>Pickler</strong> is modular, it is available across desktops, laptops and tablets.</p>
+<p><strong>Account Setup</strong></p>
+<p>To start using <strong>Pickler</strong> you’ll need to set up an account:</p>
+<ol>
+<li>Open the application and click on “Sign Up.”</li>
+<li>Fill in your details and verify your email address.</li>
+<li>Log in with your credentials.
+![[Screenshot 2024-08-02 at 5.06.30 PM.png]]</li>
+</ol>
+<p><strong>3. User Interface Overview</strong></p>
+<p><strong>Main Dashboard</strong>
+The main dashboard provides an overview of the key features and data while keeping the UI simple</p>
+<p><em>Buttons</em></p>
+<ul>
+<li>Top right corner
+<ul>
+<li>Files - View uploaded files</li>
+<li>Models - View all supported Machine Learning classification models</li>
+<li>Upload file - upload desired files of formats (.csv, .xslx, JSON, .parquet)</li>
+</ul>
+</li>
+<li>Top left corner
+<ul>
+<li>Account holder</li>
+</ul>
+</li>
+</ul>
+<p><em>Dashboard</em></p>
+<ul>
+<li>View all uploaded files - Name, status (cleaned/uncleaned), size, type, actions (clean/train/delete)</li>
+</ul>
+<p>![[Screenshot 2024-08-02 at 5.06.34 PM.png]]
+<strong>Upload files</strong></p>
+<p>![[Screenshot 2024-08-02 at 5.06.41 PM.png]]</p>
+<p><strong>Clean uploaded files</strong>
+![[Screenshot 2024-08-02 at 5.06.50 PM.png]]
+<strong>Train dataset</strong>
+![[Screenshot 2024-08-02 at 5.07.03 PM.png]]</p>
+<h4 id="5-features-and-functionalities"><strong>5. Features and Functionalities</strong></h4>
+<h5 id="feature-1-data-ingestion"><strong>Feature 1: [Data Ingestion]</strong></h5>
+<ol>
+<li>Upload file of any type</li>
+</ol>
+<h5 id="feature-2-data-transformation"><strong>Feature 2: [Data Transformation]</strong></h5>
+<ol>
+<li>Clean data for nulls</li>
+<li>Get resultant rows and columns to proceed with model training</li>
+</ol>
+<h5 id="feature-3-autotrain"><strong>Feature 3: [AutoTrain]</strong></h5>
+<ol>
+<li>Train models using the given dataset as per your choice</li>
+<li>Get enhanced experience with hyper-parameters to tune your model</li>
+</ol>
+<h4 id="6-troubleshooting-and-faqs"><strong>6. Troubleshooting and FAQs</strong></h4>
+<h5 id="1-what-file-types-are-supported-for-upload"><strong>1. What file types are supported for upload?</strong></h5>
+<p><strong>Answer:</strong> Pickler supports a variety of common file types, including .csv, .xslx, .parquet and JSON files. Please ensure that your data is properly formatted according to the system’s requirements for seamless processing.</p>
+<h5 id="2-how-do-i-handle-missing-data-in-my-dataset"><strong>2. How do I handle missing data in my dataset?</strong></h5>
+<p><strong>Answer:</strong> Pickler includes a data cleaning and preprocessing module that automatically detects and handles missing values. You can choose to remove rows with missing data, replace them with a default value, or use statistical methods such as mean or median imputation.</p>
+<h6 id="3-what-machine-learning-models-can-i-train-using-pickler"><strong>3. What machine learning models can I train using Pickler?</strong></h6>
+<p><strong>Answer:</strong> Pickler supports various classification algorithms, including Support Vector Machines (SVM), Random Forest, and Gaussian Naive Bayes. You can select the model that best suits your data and use hyper-parameter tuning to optimise its performance.</p>
+<h5 id="4-can-i-upload-multiple-files-at-once"><strong>4. Can I upload multiple files at once?</strong></h5>
+<p><strong>Answer:</strong> Currently, Pickler allows the upload of one file at a time. If you have multiple datasets, you will need to upload them separately. The system stores each file’s metadata for easy access and management.</p>
+<h5 id="5-how-do-i-monitor-the-status-of-my-uploaded-files-and-model-training"><strong>5. How do I monitor the status of my uploaded files and model training?</strong></h5>
+<p><strong>Answer:</strong> The status dashboard in the Pickler application provides real-time updates on the progress of file uploads and model training. You can view the current state of your data processing and receive notifications when tasks are completed.</p>
+<h5 id="6-what-is-the-role-of-the-temporary-file-storage-in-google-cloud-storage"><strong>6. What is the role of the temporary file storage in Google Cloud Storage?</strong></h5>
+<p><strong>Answer:</strong> Google Cloud Storage temporarily stores the uploaded files during the data processing pipeline. This secure storage solution ensures that your data is safely retained while being processed and that it can be accessed by the necessary backend services.</p>
+<h5 id="7-how-do-i-access-the-trained-machine-learning-models"><strong>7. How do I access the trained machine learning models?</strong></h5>
+<p><strong>Answer:</strong> Once the models are trained, they are saved in a pickled file format. You can download these models for further use, such as making predictions on new data or integrating them into your applications.</p>
+<h5 id="8-is-it-possible-to-customise-the-data-preprocessing-steps"><strong>8. Is it possible to customise the data preprocessing steps?</strong></h5>
+<p><strong>Answer:</strong> Yes, Pickler offers options for customising data preprocessing steps. You can specify how to handle missing values, choose data normalisation methods, and select encoding techniques for categorical variables. This flexibility allows you to tailor the preprocessing to your specific dataset needs.</p>
+<h5 id="9-how-does-rabbitmq-enhance-the-systems-functionality"><strong>9. How does RabbitMQ enhance the system’s functionality?</strong></h5>
+<p><strong>Answer:</strong> RabbitMQ facilitates asynchronous communication between micro-services in the Pickler architecture. It helps manage the task queue, ensuring that data processing tasks are efficiently distributed and handled by the appropriate services. This setup improves the scalability and reliability of the system.</p>
+<h5 id="10-how-can-i-ensure-my-data-is-secure-while-using-pickler"><strong>10. How can I ensure my data is secure while using Pickler?</strong></h5>
+<p><strong>Answer:</strong> Pickler employs several security measures, including secure token-based authentication, encryption of data in transit and at rest, and secure storage in Google Cloud Storage and MongoDB. These measures protect your data from unauthorised access and ensure its confidentiality.</p>
+<h5 id="11-what-should-i-do-if-i-encounter-an-error-during-file-upload"><strong>11. What should I do if I encounter an error during file upload?</strong></h5>
+<p><strong>Answer:</strong> If you encounter an error during file upload, check the file format and size to ensure they meet the system’s requirements. If the problem persists, consult the troubleshooting section in the user manual or contact Pickler support at <a href="mailto:manomay111@gmail.com">PicklerSupport</a> for assistance.</p>
+<h5 id="12-can-i-use-pickler-on-any-device"><strong>12. Can I use Pickler on any device?</strong></h5>
+<p><strong>Answer:</strong> Yes, Pickler is designed to be accessible on various devices, including desktops, laptops, and tablets. The responsive design ensures a consistent user experience across different screen sizes.</p>
+<h5 id="13-how-can-i-get-help-if-i-have-questions-not-covered-in-the-faq"><strong>13. How can I get help if I have questions not covered in the FAQ?</strong></h5>
+<p><strong>Answer:</strong> For additional questions or support, you can contact the Pickler support team via email at <a href="mailto:manomay111@gmail.com">PicklerSupport</a>. Our team is available to assist with any issues or inquiries you may have.</p>
+<h4 id="7-contact-support"><strong>7. Contact Support</strong></h4>
+<p>If you encounter any issues or have questions not covered in this manual, please contact us:
+Write to us at <a href="mailto:manomay111@gmail.com">PicklerSupport</a></p> </div>  </div>  </div>  </div> <div class="mx-auto w-full max-w-screen-lg px-4 py-6">  <footer class="text-center"> <a class="hover:text-red-600"> Well that's about it</a> 2024 </footer>  </div> </body></html>
