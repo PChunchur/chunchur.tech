@@ -1,0 +1,41 @@
+---
+import Section from "./Section.astro"
+const CERTIFICATIONS = [
+    {
+        title: "AWS Certified Cloud Practitioner",
+        issuer: "Amazon Web Services",
+        date: "July 2024",
+        link: "https://tinyurl.com/pchunchur-aws-ccp",
+        image: "/awscp.png",
+    },
+    // {
+    //     title: "AWS Certified Cloud Practitioner",
+    //     issuer: "Amazon Web Services",
+    //     date: "July 2024",
+    //     link: "https://tinyurl.com/pchunchur-aws-ccp",
+    //     image: "/awscp.png",
+    // },
+]
+---
+
+<Section>
+	<div class="flex justify-between pb-4">
+		<p class="text-xl font-bold">My Certifications</p>
+	</div>
+	<div class="flex flex-col pb-4 md:flex-row items-start justify-start gap-12 mt-4">
+        {
+            CERTIFICATIONS.map((certification) => (
+                <div class="flex flex-col justify-start items-start">
+                    <div class="grid grid-cols-2 gap-4 justify-items-center">
+                        <img src={certification.image} alt={certification.title} class="w-24 h-24" />
+                        <div>
+                            <p class="text-lg font-bold">{certification.title}</p>
+                            <p class="text-sm text-gray-500">{certification.issuer}, {certification.date}</p>
+                            <a href={certification.link} class="text-sm text-blue-500 hover:underline">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            ))
+        }
+	</div>
+</Section>

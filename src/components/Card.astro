@@ -10,13 +10,15 @@ const { post } = Astro.props;
 
 <a href={post.url}>
 	<div
-		class="h-full rounded-2xl bg-stone-200/50 from-orange-900 via-amber-700 to-white p-[1px] text-sm shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4)] hover:bg-gradient-to-r dark:bg-gray-900"
+		class="h-full rounded-2xl bg-stone-200/50 from-[rgb(216,50,42)] via-amber-700 to-white p-[1px] text-sm shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4)] hover:bg-gradient-to-r dark:bg-gray-900"
 	>
 		<div
 			class="flex h-full w-full
 		flex-col
     rounded-[1rem]
-		bg-stone-300
+		bg-red-50/50
+		border
+		border-stone-700
 		p-4
 		text-gray-900
     opacity-90
