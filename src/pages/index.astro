@@ -5,6 +5,7 @@ import Hero from '@/components/Hero.astro';
 import LatestPosts from '@/components/LatestPosts.astro';
 import Certifications from '@/components/Certifications.astro';
 import { sortPostsByDate } from '@/utils/data.util';
+import Projects from '@/components/Projects.astro';
 
 const { title } = AppConfig;
 const { description } = AppConfig;
@@ -16,6 +17,12 @@ const latestPosts = allPosts.slice(0, 3);
 
 <Base head={{ title, description }}>
 	<Hero />
-	<LatestPosts posts={latestPosts} />
+	<br/>
+	<br/>
+	<Projects />
+	<br/>
 	<Certifications />
+	<br/>
+	<LatestPosts posts={latestPosts} />
+	
 </Base>
