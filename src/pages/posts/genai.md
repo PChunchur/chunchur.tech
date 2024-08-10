@@ -72,6 +72,6 @@ LLMs are widely used in content creation platforms, coding environments, and eve
 
 
 ## **How do I safely use GenAI**
- I rely on my own model, which is private. By running it locally, I manage exactly what gets processed, ensuring there's no scraping of my data from services like Google Drive or Gmail. I found my model on Ollama—a website that’s like eBay for open-source models. The best part? I don't even need the internet to use it. With enough RAM and CPU power, you can also run a model like Llama 3.1 locally on your laptop, giving you complete control over your AI interactions.
+ I rely on my own model, which is private. By running it locally, I manage exactly what gets processed, ensuring there's no scraping of my data from services like Google Drive or Gmail. I found my model on Ollama, a website that’s lists all the free models we can use, say-github for open-source models. The best part? I don't even need the internet to use it. With enough RAM and CPU power, you can also run a model like Llama 3.1 locally on your laptop, giving you complete control over your AI interactions.
 
-I took it a step further by writing a zsh script that allows me to run all the necessary commands with just one line. This makes firing up my model even more efficient and streamlined. With a single command, I can quickly get my Llama 3.1 model up and running, all while keeping my data secure and private.
+I took it a step further by asking a friend to help me write a zsh script that allows me to run all the necessary commands with just one line. This makes firing up my model even more efficient and streamlined. With a single command, I can quickly get my Llama 3.1 model up and running, all while keeping my data secure and private.
