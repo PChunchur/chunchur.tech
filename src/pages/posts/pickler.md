@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/post.astro
 title: "PreProd : AutoML made simple"
-pubDate: 2023-12-23
-description: "iOS app to track personal finances"
+pubDate: 2024-08-02
+description: "Our project for Buildathon 2024"
 author: "Pranav"
-excerpt: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+excerpt: "AutoML made simple! Explore our Buildathon 2024 project, Pickler, a modular solution for easy dataset uploads, data cleaning, and machine learning model training. With a user-friendly interface, secure data handling, and scalable microservices, Pickler empowers you to create and deploy models effortlessly. Dive into our journey with PipeDreamers!"
 image:
   src:
   alt:
-tags: ["iOS", "MVVM", "finance"]
+tags: ["MERN", "AIML"]
 ---
 
 ### AutoML Hackathon

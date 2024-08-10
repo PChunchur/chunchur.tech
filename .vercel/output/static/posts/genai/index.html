@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Understanding Generative AI</title><meta name="description" content="Personal website of Pranav Chunchur"><meta name="author" content="PC"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" href="/rss.xml"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/_astro/imprint.ymSRS14l.css">
+<style>.content pre{background-color:#cdc8ff0d;border-radius:.5rem;font-size:.9rem}.content code{overflow-x:auto}.content [data-rehype-pretty-code-figure] code{padding:0!important}.content pre>code span[data-line]{border-left:.5rem solid transparent;padding:0 .5rem}.content pre>code span:first-of-type{border-top-left-radius:.5rem;border-top-right-radius:.5rem;padding-top:.5rem}.content pre>code span:last-of-type{border-bottom-left-radius:.5rem;border-bottom-right-radius:.5rem;padding-bottom:.5rem}.content pre>code .highlighted{border-left:.5rem solid rgba(209,213,219,.6)!important;background-color:#e5e7eb0d}.content pre>code[data-line-numbers]{counter-reset:line}.content pre>code[data-line-numbers]>span[data-line]:before{counter-increment:line;content:counter(line);display:inline-block;margin-right:2rem;width:1rem;text-align:left;color:#7ca2dfad}.content pre>code>span[data-line]:before{content:"";display:inline-block;width:1rem;text-align:right}.content pre>code[data-line-numbers-max-digits="2"]>span[data-line]:before{width:2rem}.content code[data-line-numbers-max-digits="3"]>span[data-line]:before{width:3rem}
+</style><script type="module">localStorage.getItem("dark-mode")==="true"||!("dark-mode"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?(localStorage.setItem("dark-mode","true"),document.querySelector("html")?.classList.add("dark")):(localStorage.setItem("dark-mode","false"),document.querySelector("html")?.classList.remove("dark"));const t=document.querySelectorAll(".light-switch");t.length>0&&t.forEach((e,a)=>{localStorage.getItem("dark-mode")==="true"&&(e.checked=!0),e.addEventListener("click",()=>{const{checked:o}=e;t.forEach((c,d)=>{d!==a&&(c.checked=o)}),e.checked?(document.documentElement.classList.add("dark"),localStorage.setItem("dark-mode","true")):(document.documentElement.classList.remove("dark"),localStorage.setItem("dark-mode","false"))})});
+</script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		var script = document.createElement('script');
+		script.defer = true;
+		script.src = '/_vercel/insights/script.js';
+		var head = document.querySelector('head');
+		head.appendChild(script);
+	</script></head> <body class="flex min-h-screen flex-col bg-white-50 font-mono text-gray-950 dark:bg-gray-950 dark:text-white"> <div class="mx-auto w-full max-w-screen-lg px-4 py-6">  <div class="flex flex-row justify-between pb-4 border-b border-dashed border-gray-500"> <div class="flex flex-row items-center font-bold w-max"> <a href="/"><img src="/logo.png" width="100px" height="100px" class="w-12 h-12 md:w-16 md:h-16"></a> <div class="flex flex-row gap-1 items-center justify-center"> <p class="pr-2 text-lg md:text-xl lg:text-2xl text-gray-500">&lt;</p> <p class="text-lg md:text-xl lg:text-2xl">pranav chunchur</p> <p class="text-[rgb(216,50,42)] animate-pulse">.</p> <p class=" text-lg md:text-xl lg:text-2xl text-gray-500">/&gt;</p> </div> </div> <div class="items-center hidden md:flex"> <nav> <ul class="flex flex-row sm:flex"> <li><a href="/tags" class="mr-4 hover:text-[rgb(216,50,42)]">TAGS</a></li> <li><a href="/posts" class="mr-4 hover:text-[rgb(216,50,42)]">BLOGS</a></li> </ul> </nav> <div class="ml-3 flex flex-col justify-center"> <input type="checkbox" id="light-switch" class="light-switch sr-only"> <label class="tada relative cursor-pointer p-2" for="light-switch"> <svg class="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg"> <path class="fill-black-800" d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z"></path> <path class="fill-black-900" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"></path> </svg> <svg class="hidden dark:block" width="16" height="16" xmlns="http://www.w3.org/2000/svg"> <path class="fill-slate-400" d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z"></path> <path class="fill-slate-500" d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z"></path> </svg> <span class="sr-only">Switch to light / dark version</span> </label> </div> </div> </div>  </div>  <div class="flex-1">  <div class="mx-auto w-full max-w-screen-md"> <div class="mx-auto w-full max-w-screen-lg px-4 py-6">  <div class="flex flex-col items-center"> <p class="px-14 pb-4 pt-6 text-center text-4xl font-bold">Understanding Generative AI</p> <div class="pb-4"> <div class="flex flex-wrap"> <a href="/tags/GenAI"><span class="mb-2 mr-2 rounded-xl bg-stone-600 px-3 py-1 text-xs font-bold uppercase text-white hover:bg-stone-500">
+#GenAI </span></a><a href="/tags/AIML"><span class="mb-2 mr-2 rounded-xl bg-stone-600 px-3 py-1 text-xs font-bold uppercase text-white hover:bg-stone-500">
+#AIML </span></a><a href="/tags/LLM"><span class="mb-2 mr-2 rounded-xl bg-stone-600 px-3 py-1 text-xs font-bold uppercase text-white hover:bg-stone-500">
+#LLM </span></a> </div> </div> <div class="text-sm"> <span>Sat, August 10, 2024</span> - <span>7 min read</span> </div>  </div>  </div> <div class="mx-auto w-full max-w-screen-lg px-4 py-6">  <div class="content prose mt-8 max-w-none text-base leading-8 text-black dark:prose-invert prose-code:rounded-lg prose-code:bg-stone-800 prose-code:p-1 prose-code:text-orange-600 prose-img:rounded-lg prose-img:shadow-xl dark:text-white prose-img:dark:shadow-stone-800"> <hr>
+<p>If you’ve been keeping up with tech news lately, you’ve probably heard about this buzzing topic that’s taking the AI space by storm. But what exactly is Generative AI ? and why is everyone talking about it? Well, think of it as that one friend who’s incredibly creative and can whip up anything with just a bit of inspiration. But instead of a human, it’s a machine doing all the creative heavy lifting.</p>
+<p>It’s like it popped out of nowhere on a random Tuesday afternoon. Some say it’s the future, some say it’s the end of creativity, and others fear it’ll steal our jobs. As with most things, the truth lies somewhere in between</p>
+<blockquote>
+<p>Spoiler alert: I agree with all of these views—but only partially. Let’s explore why.</p>
+</blockquote>
+<h3 id="what-is-genai">What is GenAI</h3>
+<p>Generative AI (GenAI) is a branch of artificial intelligence that focuses on creating new content. The magic behind Generative AI lies in its ability to use <strong>existing data</strong> to create something entirely new, something that looks, sounds, or feels real.
+In simple terms, Generative AI can create content—like text, images, music, or even code—on its own. It’s not like the AI we’re used to, which just follows instructions or analyses data;</p>
+<p>Is GenAI is a boon or a bane to us? People often think GenAI was suddenly dropped on us, fully formed, but it’s been in development for years. It’s an amazing technology—one that can help us write, look up stuff, generate content (like code, blogs, or even art). But, every wave of technology comes with trade-offs.</p>
+<ul>
+<li>Take calculators, for example. They made math easier to an exponential level but started the decline of simple mental arithmetic like knowing multiplication tables or knowing shortcuts for calculations or what we popularly call <em>vedic math</em>.</li>
+<li>Then came spreadsheets—great for managing data, they  reduced our reliance on traditional bookkeeping skills.</li>
+<li>Phones evolved too; we can call anyone, anywhere, but now we barely remember phone numbers because our contacts app handles it.</li>
+<li>Now phones are developed where they can practically substitute lower end laptops, but what we need ask ourselves is “how dependent are we on the autocorrects of our phones and how well we know our spellings?”</li>
+</ul>
+<p>Now, GenAI is the <strong>latest wave</strong>. It’s doing the creative heavy lifting—autogenerating content, art, and ideas—but we risk losing our unique creativity and critical thinking if we rely on it too much.</p>
+<p>For example: All through my school years, I had to dig through textbooks and presentations, understand concepts, and use tools like Wikipedia or YouTube to reinforce what I learned. It was a multi-step process that helped me really grasp the material. Now, I can just ask an AI to explain a topic. While that’s convenient, it means I’m spending less time deeply understanding and more time skimming through.</p>
+<p>Lets address the elephant in the room now <strong>Will GenAI take away jobs?</strong>
+Not all of them. Sure, it’ll automate some tasks, but it still needs human direction. The prompt <em>“create an image of a cat”</em> gives you one result, but <em>“create an image of a black cat with green eyes jumping from a grey cement wall onto the street”</em> requires more detailed input—and that’s where human creativity and specificity come in. as mentioned before GenAI lacks the true skill to innovate something novel, it wont generate code to build some product the world has never seen;  it generates content based on what it’s seen before. We can think of GenAI as a glorified search engine where you don’t have to go through multiple website to collect information, it does your work for you and puts in one place. So, while GenAI is powerful, it’s not about to replace human ingenuity. Our jobs aren’t going anywhere, and there’s no imminent threat of AI taking over the world like aliens.</p>
+<h3 id="the-w-h-questions-of-genai"><strong>The W-H Questions of GenAI</strong></h3>
+<h5 id="what-is-genai-1"><strong>What is GenAI?</strong></h5>
+<p>Generative AI, or GenAI, is a branch of AI that focuses on creating new content. Unlike traditional AI models that analyse or predict based on existing data, GenAI uses machine learning techniques to generate new outputs that mimic the patterns and structures it has learned from <strong>its training data</strong>. Large Language Models (LLMs), like GPT, are a subset of GenAI focused on generating human-like text.</p>
+<h5 id="when-should-we-use-llms"><strong>When Should We Use LLMs?</strong></h5>
+<p>LLMs are incredibly useful when you need to generate text quickly, brainstorm ideas, or automate content creation. They’re great for drafting emails, writing code snippets, or even creating fictional stories. However, they’re not a replacement for deep, nuanced thinking, and they shouldn’t be relied upon for tasks requiring precise judgment or highly specialised knowledge.</p>
+<h5 id="how-do-we-effectively-use-llms"><strong>How Do We Effectively Use LLMs?</strong></h5>
+<p>To get the most out of LLMs, use them as a starting point or a tool to enhance your work. Provide clear, detailed prompts, and always review and refine the output. Remember, while LLMs can generate text, the creativity and critical thinking behind that text are still very much human responsibilities.</p>
+<h5 id="where-to-use-llms"><strong>Where to Use LLMs?</strong></h5>
+<p>LLMs are widely used in content creation platforms, coding environments, and even customer service bots. For those interested in experimenting with LLMs, open-source models are available, which can be fine-tuned for specific applications.</p>
+<h5 id="the-dark-side-of-genai"><strong>The Dark Side of GenAI</strong></h5>
+<ul>
+<li>
+<p><strong>Hallucinations:</strong> LLMs sometimes unknowingly generate content that is factually incorrect, misleading or it can generate false positives.</p>
+</li>
+<li>
+<p><strong>Bias:</strong> AI models can perpetuate biases present in their training data, at the end they generate output based on its training data, so if the model is trained to avoid certain topics it will, if it has been trained to respond to certain question in limited ways. We truly don’t know if there’s an agenda behind it.
+- An incident that does justice to the statement is Google’s LLM avoiding the topic of US politics, this proves that people’s opinion can be swayed just because a model was trained in a particular way</p>
+</li>
+<li>
+<p><strong>Data Security:</strong></p>
+<ul>
+<li>Concerns over where training data comes from</li>
+<li>What are it’s sources, how credible are they?</li>
+<li>How it’s used</li>
+<li>How your data is stored</li>
+<li>Where is your data is stored
+Recent incidents have highlighted the risks of using GenAI models hosted by big tech companies. For instance, Gemini, a model developed by Google, was found to be accessing people’s Google Drive and Gmail data. While this access is meant to improve the AI’s performance, it raises serious questions about privacy and data security. We don’t really know what information is being stored or how it’s being used, which makes it hard to trust these platforms completely.</li>
+</ul>
+</li>
+<li>
+<p><strong>Intellectual Property Issues:</strong> Ownership of AI-generated content is a legal gray area.</p>
+</li>
+<li>
+<p><strong>Deepfakes:</strong> Misuse of GenAI to create realistic but fake media.</p>
+</li>
+<li>
+<p><strong>Cross-Chat Memory:</strong> Risk of retaining information across sessions, leading to privacy concerns.</p>
+</li>
+</ul>
+<h2 id="how-do-i-safely-use-genai"><strong>How do I safely use GenAI</strong></h2>
+<p>I rely on my own model, which is private. By running it locally, I manage exactly what gets processed, ensuring there’s no scraping of my data from services like Google Drive or Gmail. I found my model on Ollama—a website that’s like eBay for open-source models. The best part? I don’t even need the internet to use it. With enough RAM and CPU power, you can also run a model like Llama 3.1 locally on your laptop, giving you complete control over your AI interactions.</p>
+<p>I took it a step further by writing a zsh script that allows me to run all the necessary commands with just one line. This makes firing up my model even more efficient and streamlined. With a single command, I can quickly get my Llama 3.1 model up and running, all while keeping my data secure and private.</p> </div>  </div>  </div>  </div> <div class="mx-auto w-full max-w-screen-lg px-4 py-6">  <footer class="text-center"> <a class="hover:text-red-600 text-md mb-8"> Every challenge is an opportunity to code a solution </a> </footer>  </div> </body></html>

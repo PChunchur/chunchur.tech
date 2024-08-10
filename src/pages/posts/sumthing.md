@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/post.astro
 title: "SumThing : Personal financing made simple"
-pubDate: 2023-12-23
+pubDate: 2024-07-21
 description: "iOS app to track personal finances"
 author: "Pranav"
 excerpt: Achieving financial independence as a university student can be challenging, often leading to issues like overspending and setting unrealistic goals. I faced these problems firsthand, from struggling with budgeting to making impulsive purchases. After experimenting with various methods, I realized the need for a more systematic approach, leading to the creation of SumThing, a finance management app. SumThing helps students track expenses, categorize spending, and visualize trends. With the right tools, managing student finances can be easier and more rewarding.
@@ -91,8 +91,7 @@ The app includes charts and graphs to visualize spending trends. Users can see m
 
 - **Use Budgeting Tools**: Having two bank accounts can be helpful. For example, allocate 75% of your funds to essentials and 25% to discretionary spending. This approach helps keep your spending in check.
 	- Include everything you spend your money on - Food, junk stash for late night study sessions, even your monthly entertainment subscriptions
-* **Budget Categories**: Divide your spending into essentials, discretionary spending, and savings. Consider using two bank accounts: one for needs and one for wants. Explore
-* For example, allocate 75% for necessities and 25% for discretionary spending. This method helps manage and control expenses more effectively.
+* **Budget Categories**: Divide your spending into essentials, discretionary spending, and savings. Consider using two bank accounts: one for needs and one for wants. This method helps manage and control expenses more effectively.
 
 **4. Build an Emergency Fund**
 
