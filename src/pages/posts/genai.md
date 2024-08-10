@@ -50,7 +50,7 @@ To get the most out of LLMs, use them as a starting point or a tool to enhance y
 LLMs are widely used in content creation platforms, coding environments, and even customer service bots. For those interested in experimenting with LLMs, open-source models are available, which can be fine-tuned for specific applications. 
 
 
-##### **The Dark Side of GenAI**
+### **The Dark Side of GenAI**
 - **Hallucinations:** LLMs sometimes unknowingly generate content that is factually incorrect, misleading or it can generate false positives.
 
 - **Bias:** AI models can perpetuate biases present in their training data, at the end they generate output based on its training data, so if the model is trained to avoid certain topics it will, if it has been trained to respond to certain question in limited ways. We truly don't know if there's an agenda behind it. 
