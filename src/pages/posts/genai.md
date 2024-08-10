@@ -20,7 +20,7 @@ It’s like it popped out of nowhere on a random Tuesday afternoon. Some say it'
 Generative AI (GenAI) is a branch of artificial intelligence that focuses on creating new content. The magic behind Generative AI lies in its ability to use **existing data** to create something entirely new, something that looks, sounds, or feels real.
 In simple terms, Generative AI can create content—like text, images, music, or even code—on its own. It’s not like the AI we’re used to, which just follows instructions or analyses data;
  
- Is GenAI is a boon or a bane to us? People often think GenAI was suddenly dropped on us, fully formed, but it’s been in development for years. It’s an amazing technology—one that can help us write, look up stuff, generate content (like code, blogs, or even art). But, every wave of technology comes with trade-offs.
+ Is GenAI a boon or a bane to us? People often think GenAI was suddenly dropped on us, fully formed, but it’s been in development for years. It’s an amazing technology—one that can help us write, look up stuff, generate content (like code, blogs, or even art). But, every wave of technology comes with trade-offs.
 
 - Take calculators, for example. They made math easier to an exponential level but started the decline of simple mental arithmetic like knowing multiplication tables or knowing shortcuts for calculations or what we popularly call *vedic math*. 
 - Then came spreadsheets—great for managing data, they  reduced our reliance on traditional bookkeeping skills. 
