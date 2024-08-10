@@ -61,7 +61,7 @@ LLMs are widely used in content creation platforms, coding environments, and eve
 	- What are it's sources, how credible are they?
 	- How it’s used
 	- How your data is stored
-	- Where is your data is stored
+	- Where is your data stored
   Recent incidents have highlighted the risks of using GenAI models hosted by big tech companies. For instance, Gemini, a model developed by Google, was found to be accessing people’s Google Drive and Gmail data. While this access is meant to improve the AI’s performance, it raises serious questions about privacy and data security. We don’t really know what information is being stored or how it’s being used, which makes it hard to trust these platforms completely.
   
 - **Intellectual Property Issues:** Ownership of AI-generated content is a legal gray area.
